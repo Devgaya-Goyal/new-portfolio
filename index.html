@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devgaya Goyal - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Starry Background -->
+    <div class="stars-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="intro-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name-title" id="nameTitle">DEVGAYA GOYAL</h1>
+                    <p class="role-text">AI/ML Engineer | Full-Stack Developer | DevOps Practitioner</p>
+                    <div class="hero-buttons">
+                        <button class="hero-btn primary-btn">
+                            <i class="fas fa-download"></i> Download CV
+                        </button>
+                        <button class="hero-btn secondary-btn">
+                            <i class="fas fa-rocket"></i> View Projects
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="profile-container">
+                    <img src="./src/assets/devgaya.jpg" alt="Devgaya Goyal" class="profile-image" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400'">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-icon" style="--delay: 0s">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="floating-icon" style="--delay: 1s">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="floating-icon" style="--delay: 2s">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="floating-icon" style="--delay: 3s">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Hey there! I'm <span class="highlight">Devgaya Goyal</span>, a passionate computer science enthusiast from <span class="highlight">Rajasthan, India</span>. I love turning complex problems into simple, beautiful solutions.
+                </p>
+                <p class="about-text">
+                    Currently pursuing <span class="highlight">Computer Science Engineering</span> with a focus on <span class="highlight">Artificial Intelligence and Data Science</span>, I'm always excited to learn new technologies and push the boundaries of what's possible.
+                </p>
+                <p class="about-text">
+                    I'm interning at <span class="highlight">LINUXWORLD Pvt Ltd</span>, where I get to work on real-world projects and collaborate with amazing teams. When I'm not coding, you'll find me gaming or playing sports - both help me stay sharp and think strategically!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">SKILLS</h2>
+            
+            <!-- Tech Marquee -->
+            <div class="tech-marquee">
+                <div class="marquee-content">
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-docker"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linux"></i>
+                    <i class="fas fa-robot"></i>
+                    <i class="fas fa-brain"></i>
+                    <i class="fas fa-database"></i>
+                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-code"></i>
+                    <i class="fas fa-cogs"></i>
+                    <i class="fab fa-aws"></i>
+                    <i class="fas fa-server"></i>
+                    <!-- Duplicate for seamless loop -->
+                    <i class="fab fa-python"></i>
+                    <i class="fab fa-js-square"></i>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-react"></i>
+                    <i class="fab fa-docker"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linux"></i>
+                    <i class="fas fa-robot"></i>
+                    <i class="fas fa-brain"></i>
+                    <i class="fas fa-database"></i>
+                    <i class="fas fa-cloud"></i>
+                    <i class="fas fa-code"></i>
+                    <i class="fas fa-cogs"></i>
+                    <i class="fab fa-aws"></i>
+                    <i class="fas fa-server"></i>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- AI Skills -->
+                <div class="skill-card" data-category="ai">
+                    <div class="card-header">
+                        <h3>AI Skills</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="skill-item" data-tooltip="Framework for building LLM applications">
+                            <i class="fas fa-robot skill-icon"></i>
+                            <span class="skill-name">Agentic AI (LangChain)</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Machine learning library for Python">
+                            <i class="fas fa-brain skill-icon"></i>
+                            <span class="skill-name">Machine Learning (Scikit-learn)</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="OpenAI and Google Generative AI APIs">
+                            <i class="fas fa-magic skill-icon"></i>
+                            <span class="skill-name">Generative AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coding Skills -->
+                <div class="skill-card" data-category="coding">
+                    <div class="card-header">
+                        <h3>CODING SKILLS</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="skill-item" data-tooltip="Web markup language">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Styling language for web">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Dynamic programming language">
+                            <i class="fab fa-js-square skill-icon"></i>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Python web framework">
+                            <i class="fas fa-flask skill-icon"></i>
+                            <span class="skill-name">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Skills -->
+                <div class="skill-card" data-category="devops">
+                    <div class="card-header">
+                        <h3>DEVOPS SKILLS</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="card-content">
+                        <div class="skill-item" data-tooltip="Enterprise Linux distribution">
+                            <i class="fab fa-redhat skill-icon"></i>
+                            <span class="skill-name">RedHat Linux</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Containerization platform">
+                            <i class="fab fa-docker skill-icon"></i>
+                            <span class="skill-name">Docker</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="CI/CD automation server">
+                            <i class="fas fa-tools skill-icon"></i>
+                            <span class="skill-name">Jenkins</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Container orchestration">
+                            <i class="fas fa-dharmachakra skill-icon"></i>
+                            <span class="skill-name">Kubernetes</span>
+                        </div>
+                        <div class="skill-item" data-tooltip="Version control platform">
+                            <i class="fab fa-github skill-icon"></i>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="projects-accordion">
+                <!-- Python Projects -->
+                <div class="project-category" data-category="python">
+                    <div class="category-header">
+                        <h3>PYTHON</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="category-content">
+                        <div class="project-list">
+                            <div class="project-item" data-project="pingpong">
+                                <div class="project-info">
+                                    <h4 class="project-title">PingPong Game</h4>
+                                    <p class="project-description">Classic ping pong game built with Python Turtle graphics</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                            <div class="project-item" data-project="mail">
+                                <div class="project-info">
+                                    <h4 class="project-title">Python Mail</h4>
+                                    <p class="project-description">Email automation tool built with Python and smtplib</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                            <div class="project-item" data-project="trivia">
+                                <div class="project-info">
+                                    <h4 class="project-title">Trivia Game</h4>
+                                    <p class="project-description">Interactive trivia game using Python Tkinter with quiz functionality</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                            <div class="project-item" data-project="pomodoro">
+                                <div class="project-info">
+                                    <h4 class="project-title">Pomodoro Timer</h4>
+                                    <p class="project-description">Productivity timer using focused work sessions and breaks to increase efficiency</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                            <div class="project-item" data-project="flashcard">
+                                <div class="project-info">
+                                    <h4 class="project-title">Flash Card App</h4>
+                                    <p class="project-description">Interactive flash card application for learning and memorization</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full-Stack Projects -->
+                <div class="project-category" data-category="fullstack">
+                    <div class="category-header">
+                        <h3>FULL-STACK</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="category-content">
+                        <div class="project-list">
+                            <div class="project-item" data-project="media">
+                                <div class="project-info">
+                                    <h4 class="project-title">Media Access</h4>
+                                    <p class="project-description">Web application for camera sharing using MediaDevices and HTML</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Projects -->
+                <div class="project-category" data-category="devops">
+                    <div class="category-header">
+                        <h3>DEVOPS</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="category-content">
+                        <div class="project-list">
+                            <div class="project-item" data-project="cicd">
+                                <div class="project-info">
+                                    <h4 class="project-title">CI/CD Pipeline</h4>
+                                    <p class="project-description">Automated deployment pipeline using Jenkins, GitHub, Docker, and RedHat</p>
+                                </div>
+                                <button class="source-btn">
+                                    <i class="fas fa-code"></i> SOURCE CODE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI/ML Projects -->
+                <div class="project-category" data-category="aiml">
+                    <div class="category-header">
+                        <h3>AI/ML</h3>
+                        <i class="fas fa-chevron-down accordion-icon"></i>
+                    </div>
+                    <div class="category-content">
+                        <div class="project-list">
+                            <div class="project-item" data-project="ai-project">
+                                <div class="project-info">
+                                    <h4 class="project-title">AI/ML Project</h4>
+                                    <p class="project-description">Coming soon - Advanced AI/ML project with LangChain and Generative AI</p>
+                                </div>
+                                <button class="source-btn" disabled>
+                                    <i class="fas fa-code"></i> COMING SOON
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section" id="footer">
+        <div class="container">
+            <h2 class="section-title">LET'S CONNECT</h2>
+            <div class="social-links">
+                <a href="https://github.com/Devgaya-Goyal" target="_blank" class="social-link" data-platform="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GITHUB</span>
+                </a>
+                <a href="https://www.linkedin.com/in/devgayaa" target="_blank" class="social-link" data-platform="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LINKEDIN</span>
+                </a>
+                <a href="mailto:devagyagoyal7564@gmail.com" class="social-link" data-platform="Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>EMAIL</span>
+                </a>
+                <a href="https://www.instagram.com/devagyaa_/" target="_blank" class="social-link" data-platform="Instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>INSTAGRAM</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Tooltip -->
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
