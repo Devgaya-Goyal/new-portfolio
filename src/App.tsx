@@ -387,7 +387,7 @@ const Projects = () => {
       title: 'CICD PIPELINE',
       description: 'Automated deployment pipeline using Jenkins, GitHub, Docker, and RedHat',
       image: 'https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=400',
-      github: 'https://github.com/Devgaya-Goyal'
+      github: 'https://github.com/Devgaya-Goyal/devops-project'
     },
     {
       id: 'streamlit-mailer',
