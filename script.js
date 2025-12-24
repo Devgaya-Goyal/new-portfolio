@@ -60,7 +60,7 @@ function createStars() {
     const starsContainer = document.querySelector('.stars-container');
     if (!starsContainer) return;
     
-    const numberOfStars = 150;
+    const numberOfStars = 50;
     
     for (let i = 0; i < numberOfStars; i++) {
         const star = document.createElement('div');
