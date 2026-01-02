@@ -297,9 +297,13 @@ function initHeroButtons() {
     
     if (primaryBtn) {
         primaryBtn.addEventListener('click', () => {
-            // Add CV download functionality
-            console.log('Download CV clicked');
-            // You can add actual download functionality here
+            // Create a temporary link to your PDF
+            const link = document.createElement('a');
+            link.href = './src/assets/AIML.pdf'; // Path to your resume
+            link.download = 'Devgaya_Goyal_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
     }
     
