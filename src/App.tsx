@@ -529,7 +529,7 @@ const Contact = () => {
     {
       name: 'INSTAGRAM',
       icon: Instagram,
-      url: 'https://www.instagram.com/devagyaa_/',
+      url: 'https://www.instagram.com/devgayaa_/',
       color: 'from-pink-600 to-purple-800',
       hoverColor: 'from-pink-500 to-purple-700'
     }
