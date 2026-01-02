@@ -217,6 +217,9 @@ function initProjectItems() {
                 case 'cicd':
                     githubUrl = 'https://github.com/Devgaya-Goyal/cicd-pipeline';
                     break;
+                case 'centralized':
+                    githubUrl = 'https://github.com/Devgaya-Goyal/Centralized-Dashboard';
+                    break;
                 default:
                     githubUrl = 'https://github.com/Devgaya-Goyal';
                     break;
@@ -347,48 +350,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Add some interactive particles on click
-document.addEventListener('click', (e) => {
-    const colors = ['#00ffff', '#06b6d4', '#0891b2', '#0e7490'];
-    
-    for (let i = 0; i < 8; i++) { // Increased particle count
-        const particle = document.createElement('div');
-        particle.style.position = 'fixed';
-        particle.style.left = e.clientX + 'px';
-        particle.style.top = e.clientY + 'px';
-        particle.style.width = '4px';
-        particle.style.height = '4px';
-        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-        particle.style.borderRadius = '50%';
-        particle.style.pointerEvents = 'none';
-        particle.style.zIndex = '9999';
-        
-        document.body.appendChild(particle);
-        
-        const angle = (Math.PI * 2 * i) / 8;
-        const velocity = 120; // Increased velocity
-        const vx = Math.cos(angle) * velocity;
-        const vy = Math.sin(angle) * velocity;
-        
-        let x = e.clientX;
-        let y = e.clientY;
-        let opacity = 1;
-        
-        const animate = () => {
-            x += vx * 0.02;
-            y += vy * 0.02;
-            opacity -= 0.02;
-            
-            particle.style.left = x + 'px';
-            particle.style.top = y + 'px';
-            particle.style.opacity = opacity;
-            
-            if (opacity > 0) {
-                requestAnimationFrame(animate);
-            } else {
-                document.body.removeChild(particle);
-            }
-        };
-        
-        requestAnimationFrame(animate);
-    }
-});
+
