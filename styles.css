@@ -110,19 +110,21 @@ section.visible {
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center; 
     position: relative;
     z-index: 2;
-    padding-left: 60px;
+    padding: 0 20px;         
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    flex-wrap: wrap;       
+    justify-content: space-between;
     width: 100%;
+    max-width: 1200px;       
+    margin: 0 auto;          
     gap: 50px;
-    padding: 20px;           
+    flex-wrap: wrap;         
 }
 
 .hero-left {
