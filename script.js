@@ -100,18 +100,19 @@ function initSkillsAccordion() {
         const header = card.querySelector('.card-header');
         
         header.addEventListener('click', (e) => {
-            // Prevent any parent events from firing
-            e.stopPropagation();
+            // Prevent the click from triggering multiple things
+            e.preventDefault();
 
-            // 1. Close all other cards that are NOT the one we just clicked
-            skillCards.forEach(otherCard => {
-                if (otherCard !== card) {
-                    otherCard.classList.remove('active');
-                }
-            });
+            // Check if this card is already open
+            const isOpen = card.classList.contains('active');
+
+            // CLOSE ALL CARDS FIRST
+            skillCards.forEach(c => c.classList.remove('active'));
             
-            // 2. Toggle the active class on the clicked card
-            card.classList.toggle('active');
+            // IF the clicked card wasn't open, OPEN IT
+            if (!isOpen) {
+                card.classList.add('active');
+            }
         });
     });
 }
